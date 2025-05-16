@@ -1,0 +1,17 @@
+"Python backend" terminal
+This terminal is where you have been running your FastAPI backend server (with uvicorn app.main:app --reload).
+You see FastAPI logs, API requests, and error messages here.
+This is the terminal you should use to restart your backend server.
+
+"bash" terminal
+This terminal is just a regular shell prompt.
+You can use it for anything: running commands, installing packages, testing with curl, etc.
+You tried to start the server here, but got Address already in use because the backend was already running in the other terminal.
+Summary
+Always start/stop/restart your FastAPI server in the terminal where you see the FastAPI logs (your "Python backend" terminal).
+Use the other terminal for testing, installing, or running other commands.
+
+To restart:
+In the "Python backend" terminal, press Ctrl+C to stop the server.
+Then run:
+uvicorn app.main:app --reload
